@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_cssgrid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container_grid">
+
+    <div class="grid1">
+        <h1>JULIA <span>HUANG</span></h1>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="#">SERVICES</a></li>
+                <li class="hideOnMobile"><a href="#">ABOUT ME</a></li>
+                <li class="hideOnMobile"><a href="#">CONTACT</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="grid2">
+      <h1>psychotherapist redefining<br><span> psychology</span> with <br><strong>CBT methodology</strong></h1>
+      <img id="flor" src="assets/img/flower.png" alt="flor">  
+    </div>
+    <div class="grid3"></div>
+    <div class="grid4">
+        <div class="consutorio">
+            <h1>My Office</h1>
+            <img src="assets/img/taylor-hernandez-cm_PpUQU-lk-unsplash.jpg" alt="consutorio">
+        </div>
+            <div class="info">
+            <div class="endereco"><h2>Adress:</h2> <span>633 Odell Ranch, Skilesborough, MT 96589</span> </div>
+            <div class="horario"><h2>opening hours:</h2> <span>9am to 6pm</span> </div>
+            <div class="phone"><h2>phone:</h2> <span>xxx-xxx-xxx</span> </div>
+        </div>
+    </div>
+    <div class="grid5">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, soluta veritatis! Et,</p>
+        <img id="flor" src="assets/img/physics (1).png" alt="decoration">  
+    </div>
+    <div class="grid6" onclick="window.location.href='contato.html';">
+        <div class="top">
+            <div class="questions"> <p>have some</p> <p> questions?</p></div>
+            
+            <div class="arrow"><img src="assets/img/arrow-up-right.png" alt="contact arrow"></div>
+        </div>
+        <h1>Contact Me</h1>
+    </div>
+
+
+    <div class="grid7">
+        <ul>
+            <li><a href="#">INSTAGRAM</a></li>
+            <li><a href="#">LINKEDIN</a></li>
+            <li><a href="#">E-MAIL</a></li>
+        </ul>
+    </div>
+
+
+</div>
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display='flex '
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display='none '
+    }
+</script>
+
+</body>
+</html>

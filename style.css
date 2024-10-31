@@ -101,7 +101,6 @@ nav a:hover {
 }
 .sidebar a {
   width: 100%;
-  font-size: 1.5rem;
 }
 
 
@@ -309,6 +308,11 @@ div .phone {
   font-size: 15px;
   font-weight: 100;
   text-decoration: none;
+}
+
+.grid7 a:hover{
+  color: #818cf8;
+  transition: all .5s;
 }
 
 .menu-button {
